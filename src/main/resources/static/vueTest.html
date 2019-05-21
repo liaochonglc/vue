@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>老婆们的网站</title>
+    <script src="https://static.runoob.com/assets/vue/1.0.11/vue.min.js"></script>
+</head>
+<body>
+<div id="app">
+    {{ message }}
+</div>
+<div id="one" v-for="once in student">
+    {{$index}}-{{once.name}}-{{once.age}}
+</div>
+<div id="panduan" v-for="once in student">
+    <h v-if="girl.wife">{{once.name}}是我老婆</h>
+    <h v-else>不是我老婆</h>
+</div>
+<div id="wife">
+    <h>{{message| uppercase}}</h>
+</div>
+<div id="hou">
+<span v-bind:title="message" >
+    <button v-on:click="mo">摸</button>
+    <input v-model="message" />
+</span>
+</div>
+<div id="girl">
+    <ol>
+        <twice></twice>
+    </ol>
+</div>
+
+<script src="wife.js"></script>
+<script src="panduan.js"></script>
+<script src="message.js"></script>
+<script src="once.js"></script>
+</body>
+</html>
